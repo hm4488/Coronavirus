@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="CovidApp.References"
+             Title="References">
+    <ContentPage.Content>
+        <ScrollView>
+
+            <Frame
+                BorderColor="DarkGray"
+                       CornerRadius="5"
+                       BackgroundColor="Transparent"
+                       Margin="10"
+                       HeightRequest="1550"
+                       HorizontalOptions="Center"
+                       VerticalOptions="CenterAndExpand">
+
+                <StackLayout>
+
+
+
+                    <Label Text="This is a page that I give credits to people that who have made their work and to respect their copyrights"
+                                       TextColor="{StaticResource labelColor}"
+                               FontAttributes="Bold"
+                               HorizontalOptions="Center"
+                               MaxLines="25"
+                               FontSize="Body"
+                               LineBreakMode="TailTruncation"
+                           Margin="23"/>
+
+                    <Label Text="In Information Page  the information is written by Michael W  Smith  MD in webmd com on April 24  2020"
+                                       TextColor="{StaticResource labelColor}"
+                               HorizontalOptions="Center"
+                               MaxLines="25"
+                               FontSize="Body"
+                               LineBreakMode="TailTruncation"
+                           Margin="23"/>
+
+                    <Label Text="In Information Page  the microchart data is powered by Gramzivi in Rapid API website"
+                                       TextColor="{StaticResource labelColor}"
+                               
+                               HorizontalOptions="Center"
+                               MaxLines="25"
+                               FontSize="Body"
+                               LineBreakMode="TailTruncation"
+                           Margin="23"/>
+
+                    <Label Text="In Information Page  the coronavirus animation is provided by LottiesFiles in LottiesFiles.com"
+                                       TextColor="{StaticResource labelColor}"
+                               
+                               HorizontalOptions="Center"
+                               MaxLines="25"
+                               FontSize="Body"
+                               LineBreakMode="TailTruncation"
+                           Margin="23"/>
+
+                    <Label Text="In Information Page  the lungs animation is provided by Rohan Mahindrakar in LottiesFiles.com"
+                                       TextColor="{StaticResource labelColor}"
+                               
+                               HorizontalOptions="Center"
+                               MaxLines="25"
+                               FontSize="Body"
+                               LineBreakMode="TailTruncation"
+                           Margin="23"/>
+
+                    <Label Text="In Survival Guide Page, the Wash Your Hands animation is provided by Rajeesh VK in LottiesFiles.com"
+                                       TextColor="{StaticResource labelColor}"
+                               
+                               HorizontalOptions="Center"
+                               MaxLines="25"
+                               FontSize="Body"
+                               LineBreakMode="TailTruncation"
+                           Margin="23"/>
+
+                    <Label Text="In Survival Guide Page, the Seek Medical care animation is provided by Sarpreet Kaylan in LottiesFiles.com"
+                                       TextColor="{StaticResource labelColor}"
+                               
+                               HorizontalOptions="Center"
+                               MaxLines="25"
+                               FontSize="Body"
+                               LineBreakMode="TailTruncation"
+                           Margin="23"/>
+
+                    <Label Text="In Survival Guide Page,  the Avoid Close Contact animation is provided by Md Najmul Islam Shakil in LottiesFiles.com"
+                                       TextColor="{StaticResource labelColor}"
+                               
+                               HorizontalOptions="Center"
+                               MaxLines="25"
+                               FontSize="Body"
+                               LineBreakMode="TailTruncation"
+                           Margin="23"/>
+
+                    <Label Text="In Survival Guide Page, the Avoid touching your eyes,  nose,  face animation is provided by Wesley Guirra in LottiesFiles.com}"
+                                       TextColor="{StaticResource labelColor}"
+                               
+                               HorizontalOptions="Center"
+                               MaxLines="25"
+                               FontSize="Body"
+                               LineBreakMode="TailTruncation"
+                           Margin="23"/>
+
+                    <Label Text="In Survival Guide Page, the Try to stay home animation is provided by David Probst Jr in LottiesFiles.com"
+                                       TextColor="{StaticResource labelColor}"
+                               
+                               HorizontalOptions="Center"
+                               MaxLines="25"
+                               FontSize="Body"
+                               LineBreakMode="TailTruncation"
+                           Margin="23"/>
+
+                    <Label Text="In Statistics Page, the coronavirus data in all countries is powered by Gramzivi in Rapid API website"
+                                       TextColor="{StaticResource labelColor}"
+                               
+                               HorizontalOptions="Center"
+                               MaxLines="25"
+                               FontSize="Body"
+                               LineBreakMode="TailTruncation"
+                           Margin="23"/>
+
+                    <Label Text="In News Page, the news data is powered by Bing News Search in Rapid API website"
+                                       TextColor="{StaticResource labelColor}"
+                               
+                               HorizontalOptions="Center"
+                               MaxLines="25"
+                               FontSize="Body"
+                               LineBreakMode="TailTruncation"
+                           Margin="23"/>
+
+                    <Label Text="In About Page, the Xamarin animation  is provided by LottieFilez in LottiesFiles.com"
+                                       TextColor="{StaticResource labelColor}"
+                               
+                               HorizontalOptions="Center"
+                               MaxLines="25"
+                               FontSize="Body"
+                               LineBreakMode="TailTruncation"
+                           Margin="23"/>
+
+                    <Label Text="App icon is provided by icons8.com"
+                                       TextColor="{StaticResource labelColor}"
+                               
+                               HorizontalOptions="Center"
+                               MaxLines="25"
+                               FontSize="Body"
+                               LineBreakMode="TailTruncation"
+                           Margin="23"/>
+
+
+                </StackLayout>
+            </Frame>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

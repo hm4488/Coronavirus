@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             mc:Ignorable="d"
+             Title="About"
+             x:Class="CovidApp.AboutPage">
+    <ContentPage.Content>
+        <ScrollView>
+
+            <Frame
+                BorderColor="DarkGray"
+                       CornerRadius="5"
+                       BackgroundColor="Transparent"
+                       Margin="10"
+                       HeightRequest="800"
+                       HorizontalOptions="Center"
+                       VerticalOptions="CenterAndExpand">
+
+                <StackLayout>
+
+                    <Label x:Name="appNameLabel"
+                                 
+                               TextColor="{StaticResource labelColor}"
+                               FontSize="27"
+                                      FontAttributes="Bold"
+                                       MaxLines="3"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center" 
+                           Margin="10"
+                    />
+
+
+
+                    
+
+                    <Label Text="App's Version"
+                                       TextColor="{StaticResource labelColor}"
+                               FontAttributes="Bold"
+                               HorizontalOptions="Center"
+                               MaxLines="25"
+                               FontSize="Large"
+                               LineBreakMode="TailTruncation"
+                           Margin="23"/>
+
+                    <Label x:Name="appVersionLabel"
+                                       TextColor="{StaticResource labelColor}"
+                               
+                               HorizontalOptions="Center"
+                               MaxLines="25"
+                               FontSize="Body"
+                               LineBreakMode="TailTruncation"
+                           Margin="23"/>
+
+                    <Label Text="Developer"
+                                       TextColor="{StaticResource labelColor}"
+                               FontAttributes="Bold"
+                               HorizontalOptions="Center"
+                               MaxLines="25"
+                               FontSize="Large"
+                               LineBreakMode="TailTruncation"
+                           Margin="23"/>
+
+                    <Label Text="Harsh Mathur"
+                                       TextColor="{StaticResource labelColor}"
+                               HorizontalOptions="Center"
+                               MaxLines="25"
+                               FontSize="Body"
+                               LineBreakMode="TailTruncation"
+                           Margin="23"/>
+
+                    <Label Text="Developed in Xamarin Forms one of the best software applications for developing cross platform Mobile Apps"
+                                       TextColor="{StaticResource labelColor}"
+                               HorizontalOptions="Center"
+                               MaxLines="25"
+                               FontSize="Body"
+                               LineBreakMode="TailTruncation"
+                           Margin="23"/>
+
+                    <forms:AnimationView 
+	                              
+	                               Animation="xamarin_icon.json" 
+                                    Loop="True"
+                                    IsPlaying="True"
+                                      HorizontalOptions="Center"
+                                        VerticalOptions="Center"
+                                    HeightRequest="300"
+                                    WidthRequest="300"
+                    />
+                </StackLayout>
+            </Frame>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

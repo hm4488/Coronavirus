@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:CovidApp"
+             mc:Ignorable="d"
+             x:Class="CovidApp.MasterPage"
+             IconImageSource="hamburger.png"
+             Title="Coronavirus">
+    <StackLayout>
+        <ListView x:Name="listViewMaster" x:FieldModifier="public" SeparatorVisibility="Default" SeparatorColor="White">
+            <ListView.ItemsSource>
+                <x:Array Type="{x:Type local:MasterPageItem}">
+                    <local:MasterPageItem Title="Information" TargetType="{x:Type local:GeneralInformationPage}" />
+                    <local:MasterPageItem Title="Survival Guide" TargetType="{x:Type local:SurvivalGuidePage}" />
+                    <local:MasterPageItem Title="News"  TargetType="{x:Type local:NewsPage}" />
+                    <local:MasterPageItem Title="References"  TargetType="{x:Type local:References}" />
+                    <local:MasterPageItem Title="About"  TargetType="{x:Type local:AboutPage}" />
+                </x:Array>
+            </ListView.ItemsSource>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="5,10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="30"/>
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Column="1" Text="{Binding Title}"  FontSize="20"  TextColor="{StaticResource labelColor}"/>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

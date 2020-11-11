@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             mc:Ignorable="d"
+             x:Class="CovidApp.SurvivalGuidePage"
+             
+             Title="Survival Guide">
+    
+    <ContentPage.Content>
+        
+        <ScrollView>
+            
+            <Frame
+                BorderColor="DarkGray"
+                       CornerRadius="5"
+                       BackgroundColor="Transparent"
+                       Margin="10"
+                       HeightRequest="2900"
+                       HorizontalOptions="Center"
+                       VerticalOptions="CenterAndExpand">
+                
+                <StackLayout>
+                    
+                    <Label Text="Wash your hands"
+                                 
+                               TextColor="{StaticResource labelColor}"
+                               FontSize="30"
+                                      Style="{StaticResource Key=labelStyleForAll}"
+                                       MaxLines="2"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"
+                           Margin="25"
+                    />
+
+
+
+                    <forms:AnimationView 
+	                              
+	                               Animation="wash_your_hands.json" 
+                                    Loop="True"
+                                    IsPlaying="True"
+                                      HorizontalOptions="Center"
+                                        VerticalOptions="Center"
+                                    HeightRequest="300"
+                                    WidthRequest="300"
+                    />
+
+                    <Label Text="Regularly and thoroughly clean your hands with an alcohol based hand rub or wash them with soap and water"
+                                       TextColor="{StaticResource labelColor}"
+                               
+                               HorizontalOptions="Center"
+                               MaxLines="3"
+                           Margin="25"
+                                       FontSize="Body"
+                               LineBreakMode="TailTruncation" />
+
+                    <Label Text="If you have fever  cough and difficulty breathing  seek medical care early"
+                                 
+                               TextColor="{StaticResource labelColor}"
+                               FontSize="30"
+                                       Style="{StaticResource Key=labelStyleForAll}"
+                                       MaxLines="5"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center" 
+                           Margin="25"
+                    />
+
+
+
+                    <forms:AnimationView 
+	                              
+	                               Animation="seek_medical_care.json" 
+                                    Loop="True"
+                                    IsPlaying="True"
+                                      HorizontalOptions="Center"
+                                        VerticalOptions="Center"
+                                    HeightRequest="300"
+                                    WidthRequest="300"
+                        
+                    />
+
+                    <Label Text="Stay home if you feel unwell  If you have a fever  cough and difficulty breathing  seek medical attention and call in advance"
+                                       TextColor="{StaticResource labelColor}"
+                               
+                               HorizontalOptions="Center"
+                               MaxLines="5"
+                                       FontSize="Body"
+                           Margin="25"
+                               LineBreakMode="TailTruncation"
+                    />
+
+
+                    <Label Text="Avoid close contact"
+                                 
+                               TextColor="{StaticResource labelColor}"
+                               FontSize="30"
+                                       Style="{StaticResource Key=labelStyleForAll}"
+                                       MaxLines="2"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center" 
+                           Margin="25"
+                    />
+
+
+
+                    <forms:AnimationView 
+	                               
+	                               Animation="avoid_close_contact.json" 
+                                    Loop="True"
+                                    IsPlaying="True"
+                                      HorizontalOptions="Center"
+                                        VerticalOptions="Center"
+                                    HeightRequest="300"
+                                    WidthRequest="300"
+                    />
+
+                    <Label Text="Avoid close contact with people who are sick  maintain 3 feet 6 meters away from other people"
+                                       TextColor="{StaticResource labelColor}"
+                               Margin="25"
+                               HorizontalOptions="Center"
+                               MaxLines="3"
+                                       FontSize="Body"
+                               LineBreakMode="TailTruncation" 
+                           
+                    />
+
+                    <Label Text="Avoid touching eyes  nose and mouth"
+                                 
+                               TextColor="{StaticResource labelColor}"
+                               FontSize="30"
+                                       Style="{StaticResource Key=labelStyleForAll}"
+                                       MaxLines="2"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center" 
+                           Margin="25"
+                    />
+
+
+
+                    <forms:AnimationView 
+	                              
+	                               Animation="avoid_touching_your_face.json" 
+                                    Loop="True"
+                                    IsPlaying="True"
+                                      HorizontalOptions="Center"
+                                        VerticalOptions="Center"
+                                    HeightRequest="300"
+                                    WidthRequest="300"
+                        Margin="25"
+                    />
+
+                    <Label Text="Hands touch many surfaces and can pick up viruses  Once contaminated  hands can transfer the virus to your eyes  nose or mouth"
+                                       TextColor="{StaticResource labelColor}"
+                               
+                               HorizontalOptions="Center"
+                               MaxLines="5"
+                                       FontSize="Body"
+                               LineBreakMode="TailTruncation" 
+                           Margin="25"
+                    />
+
+                    <Label Text="Try to stay home"
+                                 
+                               TextColor="{StaticResource labelColor}"
+                               FontSize="30"
+                                       Style="{StaticResource Key=labelStyleForAll}"
+                                       MaxLines="2"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center" 
+                           Margin="25"
+                    />
+
+
+
+                    <forms:AnimationView 
+	                              
+	                               Animation="stay_safe_home.json" 
+                                    Loop="True"
+                                    IsPlaying="True"
+                                      HorizontalOptions="Center"
+                                        VerticalOptions="Center"
+                                    HeightRequest="300"
+                                    WidthRequest="300"
+                        Margin="25"
+                    />
+
+                    <Label Text="Staying at home reduces the spread of coronavirus and reduces the risk of getting infected as well as spread to other people"
+                                       TextColor="{StaticResource labelColor}"
+                               Margin="25"
+                               HorizontalOptions="Center"
+                               MaxLines="5"
+                                       FontSize="Body"
+                               LineBreakMode="TailTruncation" 
+                           
+                    />
+
+                    
+
+                </StackLayout>
+                
+            </Frame>
+
+            
+        </ScrollView>
+        
+    </ContentPage.Content>
+    
+</ContentPage>

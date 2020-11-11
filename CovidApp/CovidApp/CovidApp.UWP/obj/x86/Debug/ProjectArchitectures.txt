@@ -1,0 +1,1 @@
+C:\Users\harsh\source\repos\covid-19-project-hm4488\CovidApp\CovidApp\CovidApp.UWP\CovidApp.UWP.csproj;x86

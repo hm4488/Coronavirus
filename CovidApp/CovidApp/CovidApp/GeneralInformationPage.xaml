@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:microcharts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             mc:Ignorable="d"
+             x:Class="CovidApp.GeneralInformationPage"
+             Title="Information">
+    <ContentPage.Content>
+        <ScrollView>
+
+            <Frame
+                BorderColor="DarkGray"
+                       CornerRadius="5"
+                       BackgroundColor="Transparent"
+                       Margin="10"
+                       HeightRequest="2350"
+                       HorizontalOptions="Center"
+                       VerticalOptions="CenterAndExpand">
+
+                <StackLayout>
+
+                    <Label Text="Coronavirus"
+                                 
+                               TextColor="{StaticResource labelColor}"
+                               FontSize="27"
+                                      FontAttributes="Bold"
+                                       MaxLines="3"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center" 
+                           Margin="10"
+                    />
+
+
+
+                    <forms:AnimationView 
+	                              
+	                               Animation="coronavirus_icon.json" 
+                                    Loop="True"
+                                    IsPlaying="True"
+                                      HorizontalOptions="Center"
+                                        VerticalOptions="Center"
+                                    HeightRequest="300"
+                                    WidthRequest="300"
+                    />
+
+                    <Label Text="A coronavirus is a kind of common virus that causes an infection in your nose, sinuses, or upper throat. Most coronaviruses aren't dangerous. In early 2020, after a December 2019 outbreak in China, the World Health Organization identified SARS-CoV-2 as a new type of coronavirus. The outbreak quickly spread around the world. COVID-19 is a disease caused by SARS-CoV-2 that can trigger what doctors call a respiratory tract infection. It can affect your upper respiratory tract (sinuses, nose, and throat) or lower respiratory tract (windpipe and lungs)."
+                                       TextColor="{StaticResource labelColor}"
+                               
+                               HorizontalOptions="Center"
+                               MaxLines="25"
+                               FontSize="Body"
+                               LineBreakMode="TailTruncation"
+                           Margin="23"/>
+
+                    <Label Text="Worldwide Statistics"
+                                 Margin="10"
+                               TextColor="{StaticResource labelColor}"
+                               FontSize="27"
+                                      FontAttributes="Bold"
+                                       MaxLines="2"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center" 
+                    />
+                    
+                       <microcharts:ChartView x:Name="chartView" HeightRequest="200" WidthRequest="200" />
+
+                    
+                                <Grid  Margin="10">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*" />
+                                        <RowDefinition Height="*" />
+                                        <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+
+                                   
+
+                                    <Label Grid.Column="0"
+                           TextColor="Yellow"
+                       Text="Confirmed:"
+                               FontSize="Medium"
+                               Grid.ColumnSpan="3"
+                          
+                     />
+
+
+                                    <Label Grid.Column="4"
+                           TextColor="White"
+                           x:Name="confirmedLabel"
+                           FontSize="Medium"
+                           Grid.ColumnSpan="4"
+                          
+                     />
+
+                                    <Label Grid.Column="0"
+                           TextColor="LawnGreen"
+                       Text="Recovered:"
+                               FontSize="Medium"
+                      
+                           Grid.Row="1"
+                               Grid.ColumnSpan="3"
+                         
+                     />
+
+                                    <Label Grid.Row="1"
+                       Grid.Column="4"
+                               TextColor="White"
+                               FontSize="Medium"
+                       x:Name="recoveredLabel"
+                       
+                       VerticalOptions="End"
+                               Grid.ColumnSpan="4"
+                               
+                               />
+
+                                    <Label Grid.Column="0"
+                           TextColor="Red"
+                       Text="Deaths:"
+                               FontSize="Medium"
+                       
+                           Grid.Row="2"
+                               Grid.ColumnSpan="2"
+                          
+                     />
+
+                                    <Label Grid.Row="2"
+                       Grid.Column="4"
+                               Grid.ColumnSpan="4"
+                               FontSize="Medium"
+                       x:Name="deathsLabel"
+                               TextColor="White"
+                       
+                       VerticalOptions="End" />
+
+                                </Grid>
+
+
+                    <Label Text="Symptoms of Covid - 19"
+                                 Margin="10"
+                               TextColor="{StaticResource labelColor}"
+                               FontSize="27"
+                                      FontAttributes="Bold"
+                                       MaxLines="2"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center" 
+                    />
+                    <Label Text="Early Symptoms Include"
+                                       TextColor="{StaticResource labelColor}"
+                               Margin="23"
+                               HorizontalOptions="Center"
+                               MaxLines="20"
+                               FontSize="Body"
+                               LineBreakMode="TailTruncation" />
+                    
+                    <Label Text="Fever"
+                                       TextColor="{StaticResource labelColor}"
+                               FontAttributes="Bold"
+                               HorizontalOptions="Center"
+                               MaxLines="20"
+                               FontSize="Body"
+                               LineBreakMode="TailTruncation" />
+                    <Label Text="Fatigue"
+                                       TextColor="{StaticResource labelColor}"
+                               FontAttributes="Bold"
+                               HorizontalOptions="Center"
+                               MaxLines="20"
+                               FontSize="Body"
+                               LineBreakMode="TailTruncation" />
+                    <Label Text="The virus can lead to pneumonia respiratory failure septic shock and death. If you notice the following severe symptoms in yourself or a loved one,  get medical help right away"
+                                       TextColor="{StaticResource labelColor}"
+                               Margin="23"
+                               HorizontalOptions="Center"
+                               MaxLines="20"
+                               FontSize="Body"
+                               LineBreakMode="TailTruncation" />
+                    
+                    <Label Text="Trouble breathing or shortness of breath"
+                                       TextColor="{StaticResource labelColor}"
+                               FontAttributes="Bold"
+                               HorizontalOptions="Center"
+                               MaxLines="20"
+                               FontSize="Body"
+                               LineBreakMode="TailTruncation" />
+                    <Label Text="New confusion"
+                                       TextColor="{StaticResource labelColor}"
+                              FontAttributes="Bold"
+                               HorizontalOptions="Center"
+                               MaxLines="20"
+                               FontSize="Body"
+                               LineBreakMode="TailTruncation" />
+                    <Label Text="Can't wake up fully"
+                                       TextColor="{StaticResource labelColor}"
+                              FontAttributes="Bold"
+                               HorizontalOptions="Center"
+                               MaxLines="20"
+                               FontSize="Body"
+                               LineBreakMode="TailTruncation" />
+                    <Label Text="Bluish lips or face"
+                                       TextColor="{StaticResource labelColor}"
+                               FontAttributes="Bold"
+                               HorizontalOptions="Center"
+                               MaxLines="20"
+                               FontSize="Body"
+                               LineBreakMode="TailTruncation" />
+
+                    <Label Text="Coronavirus Risk Factors"
+                                Margin="10"
+                               TextColor="{StaticResource labelColor}"
+                               FontSize="27"
+                                      Style="{StaticResource Key=labelStyleForAll}"
+                                       MaxLines="2"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center" 
+                    />
+
+                    <Label Text="Anyone can get COVID 19  and most infections are usually mild  especially in children and young adults  But if you aren t in an area where COVID 19 is spreading  haven t traveled from an area where it s spreading  and haven t been in contact with someone who has it  your risk of infection is low"
+                                       TextColor="{StaticResource labelColor}"
+                               
+                               HorizontalOptions="Center"
+                               MaxLines="20"
+                               FontSize="Body"
+                               LineBreakMode="TailTruncation" />
+
+                    <Label Text="People over 65 are most likely to get a serious illness  as are those who live in nursing homes or long term care facilities  who have weakened immune systems  or who have medical conditions including"
+                                       TextColor="{StaticResource labelColor}"
+                              
+                               HorizontalOptions="Center"
+                               MaxLines="20"
+                               FontSize="Body"
+                               LineBreakMode="TailTruncation" />
+
+                    <Label Text="Moderate to severe asthma"
+                                       TextColor="{StaticResource labelColor}"
+                              FontAttributes="Bold"
+                               HorizontalOptions="Center"
+                               MaxLines="20"
+                               FontSize="Body"
+                               LineBreakMode="TailTruncation" />
+
+                    <Label Text="Heart  lung  or liver disease"
+                                       TextColor="{StaticResource labelColor}"
+                               FontAttributes="Bold"
+                               HorizontalOptions="Center"
+                               MaxLines="20"
+                               FontSize="Body"
+                               LineBreakMode="TailTruncation" />
+
+                    <Label Text="Kidney disease that needs dialysis"
+                                       TextColor="{StaticResource labelColor}"
+                               FontAttributes="Bold"
+                               HorizontalOptions="Center"
+                               MaxLines="20"
+                               FontSize="Body"
+                               LineBreakMode="TailTruncation" />
+
+                    <Label Text="Severe obesity"
+                                       TextColor="{StaticResource labelColor}"
+                               FontAttributes="Bold"
+                               HorizontalOptions="Center"
+                               MaxLines="20"
+                               FontSize="Body"
+                               LineBreakMode="TailTruncation" />
+
+                    <Label Text="Diabetes"
+                                       TextColor="{StaticResource labelColor}"
+                               FontAttributes="Bold"
+                               HorizontalOptions="Center"
+                               MaxLines="1"
+                               FontSize="Body"
+                               LineBreakMode="TailTruncation" />
+                    <forms:AnimationView 
+	                              
+	                               Animation="lungs_icon.json" 
+                                    Loop="True"
+                                    IsPlaying="True"
+                                      HorizontalOptions="Center"
+                                        VerticalOptions="Center"
+                                    HeightRequest="300"
+                                    WidthRequest="500"
+                    />
+
+                </StackLayout>
+            </Frame>
+
+            
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
